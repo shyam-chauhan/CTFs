@@ -62,16 +62,23 @@
 						$inputUsername = $_POST["username"];
 						$inputPassword = $_POST["pass"];
 
-						if ($inputUsername == $correctUsername && $inputPassword == $correctPassword) {
+						if ($_POST["username"] == 'N3wbIeH4ker' && $_POST["pass"] == 'H4ck1ngTCF') {
 							// Successful login
 							$_SESSION["login"] = true;
 							$role = 'user';
 							header("Location: dashboard.php?role=" . urlencode($role));
 							exit();
-						} else {
+						} 
+						elseif($_POST["username"] == '3L173U5#R' && $_POST["pass"] == '4L4N&UR1NG') {
+							$_SESSION["login"] = true;
+							$role = 'user';
+							header("Location: dashboard2.php?role=" . urlencode($role));
+							exit();
+						}
+						else {
 							// Failed login
 							$_SESSION["login"] = false;
-							header('header(ASCII): SWYgeW91IGhhdmUgZm91bmQgdGhpcyB0aGFuIHlvdSBub3cgcHJvYmFibHkga25vdyB0aGF0IHRoaXMgd2FzIG5vdCBhbnkgdHlwZSBvZiBoZWFkZXIuCgpEbyB5b3Uga25vdyBhYm91dCAyIGZhY3RvciBhdXRoZW50aWNhdGlvbiA/IHRoaXMgaXMgdGhlIHNhbWUgISAKMiBrZXlzIGFyZSBnaXZlbiB0aGVyZSBhcyBJRCBhbmQgcGFzc3dvcmQsIHRoZSBhY3R1YWwgSUQgYW5kIHBhc3N3b3JkIGlzIGVuY3J5cHRlZCB1c2luZyByYzUtY2ZiIGFuZCBhZXMtMTkyLWN0ciBlbmNyeXB0aW9uIGFuZCBnaXZlbiB0aGVyZSBhcyBJX2FtX3RoZV9mbGFnLiAKdHJ5IGRlY29kaW5nIGl0IGFuZCB0cnlpbmcgYm90aCBrZXlzIG9uZSBieSBvbmUgaW4gYW55IHNlcXVlbmNlLCB5b3Ugd2lsbCBmaW5kIG91dCB0aGUgYWN0dWFsIElEIGFuZCBwYXNzd29yZC4KCkEgY2VydGlmaWNhdGUgaXMgYWxzbyB0aGVyZTsgaWYgeW91IGNhbiBmaW5kIGl0LCB3ZWxjb21lIGFib2FyZC4KSGF2ZSBmdW4sIGhhcHB5IGxlYXJuaW5nIHdpdGggVGhlIEN5YmVyIEZvcmNlLg==');
+							header('header: SWYgeW91IGhhdmUgZm91bmQgdGhpcyB0aGFuIHlvdSBub3cgcHJvYmFibHkga25vdyB0aGF0IHRoaXMgd2FzIG5vdCBhbnkgdHlwZSBvZiBoZWFkZXIuCgpEbyB5b3Uga25vdyBhYm91dCAyIGZhY3RvciBhdXRoZW50aWNhdGlvbiA/IHRoaXMgaXMgdGhlIHNhbWUgISAKMiBrZXlzIGFyZSBnaXZlbiB0aGVyZSBhcyBJRCBhbmQgcGFzc3dvcmQsIHRoZSBhY3R1YWwgSUQgYW5kIHBhc3N3b3JkIGlzIGVuY3J5cHRlZCB1c2luZyByYzUtY2ZiIGFuZCBhZXMtMTkyLWN0ciBlbmNyeXB0aW9uIGFuZCBnaXZlbiB0aGVyZSBhcyBJX2FtX3RoZV9mbGFnLiAKdHJ5IGRlY29kaW5nIGl0IGFuZCB0cnlpbmcgYm90aCBrZXlzIG9uZSBieSBvbmUgaW4gYW55IHNlcXVlbmNlLCB5b3Ugd2lsbCBmaW5kIG91dCB0aGUgYWN0dWFsIElEIGFuZCBwYXNzd29yZC4KCkEgY2VydGlmaWNhdGUgaXMgYWxzbyB0aGVyZTsgaWYgeW91IGNhbiBmaW5kIGl0LCB3ZWxjb21lIGFib2FyZC4KSGF2ZSBmdW4sIGhhcHB5IGxlYXJuaW5nIHdpdGggVGhlIEN5YmVyIEZvcmNlLg==');
 							header('I_am_the_flag: l3WNUJ8zq5XvvpMBhsVmyEPqIjAshvW561Z+V6x0vYn/OpdLiXETBTOJ5uCfodoRmYpMcfyFUki05oe0');
 							header('id: QXDW5eFEjZ');
 							header('password: 19yDOhYdrXHzFvLZiJyafm6L');
@@ -115,7 +122,7 @@
 						</button>
 					</div>
 					<div class="text-center p-t-60">
-						<a class="txt1" href="#">
+						<a class="txt1" href="forgot_password.php">
 							Forgot Password?
 						</a>
 

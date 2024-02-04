@@ -76,8 +76,8 @@ else{
 </head>
 <body background="images/sky.jpg">
     <h1>You have successfully logged in as USER</h1>
-    <h2>Your Flag is : Yb9dX5qO2Pm9azBq</h2>
-    <a href="index.php" class="logout-btn">Logout</a>
+    <h2>Your Flag is : Yb9dX5qO2Pm9azBqM1</h2>
+    <a href="logout.php" class="logout-btn">Logout</a>
 
     <!-- Add your script includes here -->
 

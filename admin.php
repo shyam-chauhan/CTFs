@@ -115,11 +115,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Set the content type header
     header('Content-Type: text/html');
 
-if($flag == 'Yb9dX5qO2Pm9azBq')
+if($flag == 'Yb9dX5qO2Pm9azBqM1' || 'DvMtBVpkEyj0M2')
 {
     // Output the HTML content
     echo $htmlContent;
-    $data = "$name, $email\n";
+    $data = "$name, $email, $flag\n";
     file_put_contents("entries.txt", $data, FILE_APPEND);
 }
 else
